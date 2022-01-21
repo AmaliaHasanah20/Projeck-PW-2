@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STT Nurul Fikri | Form Mitra</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- logo -->
+  <link rel="icon" type="image/png" href="./dist/img/logo.png">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
+    <a class="navbar-brand ml-3" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" href="lowongan_baru.html">Lowongan Baru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="isi_loker.html">Isi Loker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./form-mitra-lokernf.html">Daftar Mitra</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard_loker.html">Berita</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control mr-2 border border-info" type="search" placeholder="Search" aria-label="Search">
+        <a class="nav-link text-white" href="./login.html" style="text-decoration: none;">Login</a>
+      </form>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: white;">
+    <!-- Content Header (Page header) -->
+    <div class="container-fluid pt-5">
+        <div class="row pt-5 text-center">
+            <div class="col-md-12">
+                <h2 style="font-weight: bold;">
+                    Sistem Informasi Lowongan Kerja NF - SILOKERNF
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row  justify-content-center">
+          <div class="col-md-11">
+            <ol class="breadcrumb bg-white justify-content-end">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active">Daftra Mitra</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row justify-content-center bg-warning">
+            <div class="col-11">
+                <div class="card card-info bg-warning">
+                    <div class="card-header bg-warning">
+                      <h3 class="card-title">Form Menjadi Mitra</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal">
+                      <div class="card-body">
+                        <div class="form-group row">
+                            <label for="nama" class="col-sm-3 col-form-label">Nama Perusahaan/Organisasi</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="nama" placeholder="Nama perusahaan/organisasi">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="bidang">Bidang Usaha</label>
+                            <div class="col-sm-9" id="bidang">
+                                <select class="form-control select2" style="width: 50%;">
+                                    <option selected="selected">Perbankan</option>
+                                    <option>Teller</option>
+                                    <option>Customer Service</option>
+                                    <option>Account Officer</option>
+                                    <option>Sales Officer</option>
+                                    <option>Auditor</option>
+                                    <option>Security</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="alamat" class="col-sm-3 col-form-label">Alamat Kantor</label>
+                            <div class="col-sm-9">
+                                <textarea id="alamat" class="form-control" rows="3" placeholder="Alamat lengkap"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="person" class="col-sm-3 col-form-label">Kontak Person</label>
+                            <div class="input-group col-sm-9">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                </div>
+                                <input type="tel" id="person" class="form-control" placeholder="+62">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="hp" class="col-sm-3 col-form-label">No HP/Telpone</label>
+                            <div class="input-group col-sm-9">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-phone-square-alt"></i></span>
+                                </div>
+                                <input type="tel" id="hp" class="form-control" placeholder="+62">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                            <div class="input-group col-sm-9">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+                                </div>
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="web" class="col-sm-3 col-form-label">Alamat Web</label>
+                            <div class="input-group col-sm-9">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-globe"></i></span>
+                                </div>
+                                <input type="url" id="web" class="form-control" placeholder="https:// or https://">
+                            </div>
+                        </div>
+                      </div>
+                      <!-- /.card-body -->
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-default">Daftar</button>
+                        <button type="submit" class="btn btn-default">Cancel</button>
+                      </div>
+                      <!-- /.card-footer -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Main Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+
+    <div class="container text-center text-md-left">
+
+        <div class="row text-center text-md-left">
+
+            <div class="col-md-3 col-lg-3 col-lx-3 mx-auto mt-3 text-center">
+              <img src="./dist/img/logo.jpg" alt="" class="brand-image img-circle" style="width: 30%;">
+              <P class="mt-3">rocketweb.id adalah situs web yang menyediakan lowongan pekerjaan untuk memudahkan calon pekerja untuk melamar pekerjaan.</P>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-info">Location</h5>
+                <p>
+                  <i class="fa fa-home mr-3"></i> Bogor, Jawa Barat, Indonesia
+              </p>
+                <p>
+                  <i class="fa fa-home mr-3"></i> Depok, Jawa Barat, Indonesia
+              </p>
+              <p>
+                <i class="fa fa-home mr-3"></i> Jakarta Selatan, Indonesia
+            </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold text-info">Contact</h5>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> rocketweb99@gmail.com
+              </p>
+               <p>
+                  <i class="fa fa-phone mr-3"></i> +62 857773232
+              </p>
+              <p>
+                  <i class="fa fa-print mr-3"></i> +62 1344545567
+              </p>
+          </div>
+
+        </div>
+
+        
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
